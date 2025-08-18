@@ -8,7 +8,7 @@
   "scripts": {
     "build": "rimraf dist && cpy \"public/**\" dist --parents && cpy \"src/**\" dist/src --parents",
     "coverage": "c8 --reporter=text --reporter=lcov node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage",
-    "test:int": "playwright test",
+    "test:int": "playwright test tests",
     "start:dist": "http-server dist -p 8080 -c-1",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
